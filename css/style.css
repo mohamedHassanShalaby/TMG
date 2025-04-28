@@ -1,0 +1,499 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+header {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.links {
+  display: flex;
+}
+.links li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.links li a {
+  margin-right: 30px;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px 20px;
+  color: black;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  font-weight: bold;
+}
+.links li a:hover {
+  background-color: #7b7777;
+}
+.menu {
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+.close {
+  position: relative;
+    top: -28px;
+    left: -20px;
+    display: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: crimson;
+    cursor: pointer;
+}
+.icon i {
+  font-size: 50px;
+}
+.linksproj {
+  background-color: #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px;
+  list-style: none;
+}
+.linksproj li a {
+  padding: 15px 20px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 35px;
+  color: black;
+  font-weight: bold;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+.linksproj li a:hover {
+  background-color: #7b7777;
+}
+.content .explain {
+  background-color: #d9d9d9;
+}
+.content .imgbox {
+  width: 100%;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  margin-bottom: 10px;
+}
+.content p,
+.content h3 {
+  text-align: center;
+}
+.content p {
+  font-size: 25px;
+  font-weight: bold;
+}
+.content h3 {
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+.mdenty,
+.selua {
+  display: flex;
+  background-color: #7b7777;
+}
+.mdenty .box,
+.selua .box {
+  width: 60%;
+}
+.mdenty .box p,
+.nour .box p,
+.selua .box p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+.mdenty .box h3,
+.nour .box h3,
+.selua .box h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+.mdenty .imgmdenty,
+.selua .imgselua {
+  width: 40%;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px;
+}
+.nour {
+  display: flex;
+  background-color: #d9d9d9;
+}
+.nour .imgnour {
+  width: 40%;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+.nour .box {
+  width: 60%;
+}
+
+/* about  */
+.about {
+  text-align: center;
+  background-color: #d9d9d9;
+  padding: 20px 50px;
+}
+.about p {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.about h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+}
+/* Contact */
+.contact {
+  text-align: center;
+  background-color: #d9d9d9;
+  padding: 10px 0;
+}
+.contact h3 {
+  width: 300px;
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.contact p {
+  font-size: 35px;
+}
+.input {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.input label {
+  font-size: 40px;
+  font-weight: bold;
+  width: 20%;
+}
+.input input {
+  padding: 20px 30px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.contact button {
+  margin: 20px;
+  font-size: 40px;
+  padding: 15px 70px;
+  border: none;
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+/* project */
+.project {
+  background-color: #d9d9d9;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.project .imgproj {
+  width: 100%;
+}
+.project h3 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+.project .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+.project .box {
+  display: flex;
+  justify-content: space-between;
+}
+.project .desc,
+.project .desc1 {
+  text-align: center;
+  width: 53%;
+}
+.project .desc {
+  background-color: #fff;
+}
+.project .desc1 {
+  background-color: #d9d9d9;
+}
+.project h5 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.project .desctitle {
+  font-size: 30px;
+  font-weight: 600;
+}
+.project .imgdesc {
+  width: 47%;
+  height: 400px;
+}
+/* media quary */
+@media (max-width: 1020px) {
+  header {
+    padding: 10px 25px;
+    justify-content: space-around;
+  }
+  .logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  .links li a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 23px;
+    padding: 5px 10px;
+    color: black;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    font-weight: bold;
+  }
+  .icon i {
+    font-size: 40px;
+  }
+
+  .contact h3 {
+      width: 250px;
+      font-size: 40px;
+  }
+
+  .contact p {
+      font-size: 30px;
+  }
+  .input input {
+      padding: 17px 25px;
+  }
+  .input label {
+      font-size: 25px;
+  }
+  .contact button {
+      font-size: 30px;
+      padding: 10px 50px;
+  }
+  .contact button {
+      font-size: 30px;
+  }
+}
+@media (max-width: 770px) {
+  header {
+    padding: 8px 20px;
+  }
+  .logo img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .links li a {
+    margin-right: 8px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .icon i {
+    font-size: 35px;
+  }
+  .input input {
+      padding: 13px 20px;
+  }
+  .input label {
+      font-size: 20px;
+  }
+   .contact button {
+       font-size: 25px;
+       padding: 8px 35px;
+   }
+}
+@media (max-width: 700px) {
+  .linksproj {
+  padding: 10px;
+}
+.linksproj li a {
+  padding: 10px 15px;
+  margin-right: 7px;
+  font-size: 25px;
+}
+
+}
+@media (max-width: 620px) {
+  header {
+    padding: 5px 12px;
+  }
+
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .links li a {
+    margin-right: 6px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  .icon i {
+    font-size: 30px;
+  }
+
+  .about p {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .about h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+  }
+
+  .content .imgbox {
+      margin-bottom: 7px;
+  }
+  .content p {
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  .content h3 {
+      font-size: 15px;
+      padding-bottom: 25px;
+  }
+  .mdenty .box,
+  .selua .box {
+    margin-right: 15px;
+  }
+
+  .mdenty .box p,
+  .nour .box p,
+  .selua .box p {
+      font-size: 25px;
+  }
+
+  .mdenty .box h3,
+  .nour .box h3,
+  .selua .box h3 {
+      font-size: 20px;
+  }
+
+  .nour .box {
+      width: 60%;
+  }
+  .input input {
+      padding: 10px 17px;
+  }
+
+  .input label {
+      font-size: 15px;
+  }
+
+  .contact button {
+      font-size: 20px;
+      padding: 8px 35px;
+  }
+}
+@media (max-width: 560px) {
+    header {
+      padding: 5px 12px;
+    }
+    .links {
+        display: none;
+        flex-direction: column;
+        background-color: #ddd;
+        position: relative;
+        top: 70px;
+            left: 85px;
+    }
+    .links li {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .links li a {
+              text-align: center;
+    }
+    .icon {
+        display: none;
+    }
+        .logo img {
+            width: 25px;
+            height: 25px;
+        }
+    
+        .links li a {
+            margin-right: 4px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    
+        .icon i {
+            font-size: 25px;
+        }
+    .menu {
+        display: block;
+
+    }
+    .project .desc {
+        height: 200px;
+    }
+        .project h5 {
+            font-size: 25px;
+        }
+    
+        .project .desctitle {
+            font-size: 20px;
+        }
+    
+        .project .imgdesc {
+            height: 200px;
+        }
+}
+
+@media (max-width: 500px) {
+  .linksproj {
+    flex-direction: column;
+}
+.linksproj li {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+}
